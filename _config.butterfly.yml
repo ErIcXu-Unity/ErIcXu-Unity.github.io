@@ -47,7 +47,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/ErIcXu-Unity || GitHub || '#24292e'
+  fab fa-github: https://github.com/ErIcXu-Unity || GitHub || '#ffffff'
   fas fa-code: https://leetcode.com/u/ErIcXu-Unity/ || LeetCode || '#FFA116'
   fab fa-youtube: https://www.youtube.com/@mimosashinichi6120 || YouTube || '#FF0000'
   fas fa-envelope: mailto:chenlong.xu@outlook.com || Email || '#4a7dbe'
@@ -299,12 +299,12 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: "Follow me below:"
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/ErIcXu-Unity
   card_announcement:
     enable: true
     content: This is my Blog
