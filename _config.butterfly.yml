@@ -47,7 +47,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/ErIcXu-Unity || GitHub || '#ffffff'
+  fab fa-github: https://github.com/ErIcXu-Unity || GitHub || '#24292e'
   fas fa-code: https://leetcode.com/u/ErIcXu-Unity/ || LeetCode || '#FFA116'
   fab fa-youtube: https://www.youtube.com/@mimosashinichi6120 || YouTube || '#FF0000'
   fas fa-envelope: mailto:chenlong.xu@outlook.com || Email || '#4a7dbe'
@@ -69,7 +69,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+index_img: https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
 
 # The banner image of archive page
 archive_img:
@@ -299,7 +299,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: "Follow me below:"
+    description:
     button:
       enable: false
       icon: fab fa-github
