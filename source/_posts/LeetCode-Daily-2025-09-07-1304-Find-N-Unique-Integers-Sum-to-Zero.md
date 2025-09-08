@@ -5,7 +5,9 @@ tags: [Daily Question, LeetCode, Array, Math, Easy, Algorithm]
 categories: [Algorithm, Daily LeetCode]
 ---
 
-## 📋 Problem: Construct an Array With n Unique Integers Summing to Zero
+## Problem Link
+
+[LeetCode 1304 - Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)
 
 **Difficulty**: Easy  
 **Topic**: Array, Math  
@@ -13,7 +15,7 @@ categories: [Algorithm, Daily LeetCode]
 
 ---
 
-## 🎥 Video Explanation
+## Video Explanation
 
 {% youtube 8v1bnrWWjtw %}
 
@@ -21,12 +23,12 @@ _Watch the complete solution walkthrough on my YouTube channel!_
 
 ---
 
-## 💡 Intuition
+## Intuition
 
 When we want `n` unique integers that sum to zero, the first idea is **symmetry**.  
 Pairs like `(x, -x)` cancel each other out perfectly. So the solution is to build the array from opposite pairs, and if needed, include `0` as a neutral element.
 
-## 🔍 Approach
+## Approach
 
 - **If `n` is even**: take `n // 2` pairs of opposite numbers, e.g. `(1, -1), (2, -2), ...`.
 - **If `n` is odd**: do the same for `n // 2` pairs and add a single `0` at the end.
@@ -38,12 +40,12 @@ This guarantees:
 - ✅ **Correct count**: Exactly `n` elements
 - ✅ **Sum equals zero**: Opposite pairs cancel out
 
-## 📊 Complexity Analysis
+## Complexity Analysis
 
 - **Time complexity**: `O(n)` - We construct the result with one loop up to `n // 2`.
 - **Space complexity**: `O(n)` - For storing the resulting array of size `n`.
 
-## 💻 Solution
+## Solution
 
 ```python
 class Solution:
@@ -57,7 +59,7 @@ class Solution:
         return res
 ```
 
-## 🧪 Example Walkthrough
+## Example Walkthrough
 
 **Example 1**: `n = 5`
 
@@ -70,7 +72,7 @@ class Solution:
 - Pairs: `(1, -1), (2, -2)` → `[1, -1, 2, -2]`
 - Sum: `1 + (-1) + 2 + (-2) = 0` ✅
 
-## 🎯 Key Takeaways
+## Key Takeaways
 
 1. **Symmetry approach** is perfect for sum-to-zero problems
 2. **Handle odd/even cases** separately for completeness
@@ -79,10 +81,4 @@ class Solution:
 
 ---
 
-## 🔗 Problem Link
-
-[LeetCode 1304 - Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)
-
----
-
-_Part of my daily LeetCode journey! Follow along for more algorithm solutions and explanations._ 🚀
+_Part of my daily LeetCode journey! Follow along for more algorithm solutions and explanations._
