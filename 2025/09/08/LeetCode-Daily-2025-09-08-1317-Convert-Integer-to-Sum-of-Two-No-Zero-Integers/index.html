@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers | Eric's Space</title><meta name="author" content="Eric Xu"><meta name="copyright" content="Eric Xu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Problem LinkLeetCode 1317 - Convert Integer to the Sum of Two No-Zero Integers Difficulty: EasyTopic: Array, MathDaily Question: 8th September 2025  Video Explanation  Watch the complete solution walk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode Daily 08&#x2F;09&#x2F;2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers">
+<meta property="og:url" content="https://ericxu-unity.github.io/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/index.html">
+<meta property="og:site_name" content="Eric&#39;s Space">
+<meta property="og:description" content="Problem LinkLeetCode 1317 - Convert Integer to the Sum of Two No-Zero Integers Difficulty: EasyTopic: Array, MathDaily Question: 8th September 2025  Video Explanation  Watch the complete solution walk">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ericxu-unity.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-09-07T14:00:00.000Z">
+<meta property="article:modified_time" content="2025-09-08T16:39:54.876Z">
+<meta property="article:author" content="Eric Xu">
+<meta property="article:tag" content="Daily Question">
+<meta property="article:tag" content="LeetCode">
+<meta property="article:tag" content="Array">
+<meta property="article:tag" content="Math">
+<meta property="article:tag" content="Easy">
+<meta property="article:tag" content="Algorithm">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ericxu-unity.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers",
+  "url": "https://ericxu-unity.github.io/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/",
+  "image": "https://ericxu-unity.github.io/img/butterfly-icon.png",
+  "datePublished": "2025-09-07T14:00:00.000Z",
+  "dateModified": "2025-09-08T16:39:54.876Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Eric Xu",
+      "url": "https://ErIcXu-Unity.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ericxu-unity.github.io/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Eric's Space</span></a><a class="nav-page-title" href="/"><span class="site-name">LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-09-07T14:00:00.000Z" title="Created 2025-09-08 00:00:00">2025-09-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-08T16:39:54.876Z" title="Updated 2025-09-09 02:39:54">2025-09-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Algorithm/">Algorithm</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Algorithm/Daily-LeetCode/">Daily LeetCode</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Problem-Link"><a href="#Problem-Link" class="headerlink" title="Problem Link"></a>Problem Link</h2><p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/">LeetCode 1317 - Convert Integer to the Sum of Two No-Zero Integers</a></p>
+<p><strong>Difficulty</strong>: Easy<br><strong>Topic</strong>: Array, Math<br><strong>Daily Question</strong>: 8th September 2025</p>
+<hr>
+<h2 id="Video-Explanation"><a href="#Video-Explanation" class="headerlink" title="Video Explanation"></a>Video Explanation</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/8v1bnrWWjtw" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p><em>Watch the complete solution walkthrough on my YouTube channel!</em></p>
+<hr>
+<h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><p>We need two <strong>positive</strong> integers <code>a</code> and <code>b</code> such that <code>a + b = n</code> <strong>and</strong> neither <code>a</code> nor <code>b</code> contains the digit <strong><code>0</code></strong> anywhere in its <strong>decimal representation</strong>.</p>
+<blockquote>
+<p>Important clarification: “No-Zero integer” does <strong>not</strong> mean “the number is not equal to 0”; it means <strong>no digit <code>&#39;0&#39;</code> is allowed in the number</strong>.</p>
+</blockquote>
+<p>Examples: <code>7</code>, <code>19</code>, <code>345</code> ✅; <code>10</code>, <code>101</code>, <code>203</code> ❌ (because they contain the digit <code>0</code>).</p>
+<p>Given <code>2 ≤ n ≤ 10^4</code>, a simple linear scan over <code>a</code> (and thus <code>b = n - a</code>) is sufficient. As soon as we find a pair where <strong>both</strong> contain no <code>&#39;0&#39;</code>, we can return it (the problem guarantees at least one valid answer).</p>
+<h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ul>
+<li>Loop <code>a</code> from <code>1</code> to <code>n - 1</code> (ensures both parts are positive).</li>
+<li>Let <code>b = n - a</code>.</li>
+<li>Check the “No-Zero” property by verifying <code>&#39;0&#39; not in str(a)</code> <strong>and</strong> <code>&#39;0&#39; not in str(b)</code>.</li>
+<li>Return the first valid pair <code>[a, b]</code> immediately (early exit).</li>
+</ul>
+<p><strong>Why this works:</strong></p>
+<ul>
+<li>The constraints are small; the worst-case scan is at most <code>n-1</code> iterations.</li>
+<li>String containment check is straightforward and unambiguous for the “no digit <code>0</code>“ requirement.</li>
+<li>A valid pair is guaranteed to exist, so the loop will terminate with a result.</li>
+</ul>
+<h2 id="Complexity-Analysis"><a href="#Complexity-Analysis" class="headerlink" title="Complexity Analysis"></a>Complexity Analysis</h2><ul>
+<li><strong>Time complexity</strong>: <code>O(n)</code> — we may try each <code>a</code> once until we find a valid pair.</li>
+<li><strong>Space complexity</strong>: <code>O(1)</code> — constant extra space.</li>
+</ul>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> typing <span class="keyword">import</span> <span class="type">List</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">getNoZeroIntegers</span>(<span class="params">self, n: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="keyword">for</span> a <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">            b = n - a</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;0&#x27;</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="built_in">str</span>(a) <span class="keyword">and</span> <span class="string">&#x27;0&#x27;</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="built_in">str</span>(b):</span><br><span class="line">                <span class="keyword">return</span> [a, b]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Example-Walkthrough"><a href="#Example-Walkthrough" class="headerlink" title="Example Walkthrough"></a>Example Walkthrough</h2><p><strong>Example 1</strong>: <code>n = 11</code></p>
+<ul>
+<li>Try <code>a = 1</code>, <code>b = 10</code> → <code>&#39;0&#39; in str(10)</code> ❌</li>
+<li>Try <code>a = 2</code>, <code>b = 9</code> → Both contain no <code>&#39;0&#39;</code> ✅</li>
+<li>Return <code>[2, 9]</code></li>
+</ul>
+<p><strong>Example 2</strong>: <code>n = 10000</code></p>
+<ul>
+<li>Try <code>a = 1</code>, <code>b = 9999</code> → Both contain no <code>&#39;0&#39;</code> ✅</li>
+<li>Return <code>[1, 9999]</code></li>
+</ul>
+<h2 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways"></a>Key Takeaways</h2><ol>
+<li><strong>String-based digit checking</strong> is the most straightforward approach for “no digit 0” requirement</li>
+<li><strong>Linear search</strong> is sufficient given the small constraint bounds</li>
+<li><strong>Early termination</strong> optimizes performance when valid pair is found</li>
+<li><strong>Problem guarantees</strong> ensure a valid solution always exists</li>
+</ol>
+<hr>
+<p><em>Part of my daily LeetCode journey! Follow along for more algorithm solutions and explanations.</em></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://ErIcXu-Unity.github.io">Eric Xu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://ericxu-unity.github.io/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/">https://ericxu-unity.github.io/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Daily-Question/">Daily Question</a><a class="post-meta__tags" href="/tags/LeetCode/">LeetCode</a><a class="post-meta__tags" href="/tags/Array/">Array</a><a class="post-meta__tags" href="/tags/Math/">Math</a><a class="post-meta__tags" href="/tags/Easy/">Easy</a><a class="post-meta__tags" href="/tags/Algorithm/">Algorithm</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/09/07/LeetCode-Daily-2025-09-07-1304-Find-N-Unique-Integers-Sum-to-Zero/" title="LeetCode Daily 07/09/2025 - 1304. Find N Unique Integers Sum up to Zero"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">LeetCode Daily 07/09/2025 - 1304. Find N Unique Integers Sum up to Zero</div></div><div class="info-2"><div class="info-item-1">Problem LinkLeetCode 1304 - Find N Unique Integers Sum up to Zero Difficulty: EasyTopic: Array, MathDaily Question: 7th September 2025  Video Explanation  Watch the complete solution walkthrough on my YouTube channel!  IntuitionWhen we want n unique integers that sum to zero, the first idea is symmetry.Pairs like (x, -x) cancel each other out perfectly. So the solution is to build the array from opposite pairs, and if needed, include 0 as a neutral element. Approach If n is even: take n // 2 ...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/09/07/LeetCode-Daily-2025-09-07-1304-Find-N-Unique-Integers-Sum-to-Zero/" title="LeetCode Daily 07&#x2F;09&#x2F;2025 - 1304. Find N Unique Integers Sum up to Zero"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-07</div><div class="info-item-2">LeetCode Daily 07&#x2F;09&#x2F;2025 - 1304. Find N Unique Integers Sum up to Zero</div></div><div class="info-2"><div class="info-item-1">Problem LinkLeetCode 1304 - Find N Unique Integers Sum up to Zero Difficulty: EasyTopic: Array, MathDaily Question: 7th September 2025  Video Explanation  Watch the complete solution walkthrough on my YouTube channel!  IntuitionWhen we want n unique integers that sum to zero, the first idea is symmetry.Pairs like (x, -x) cancel each other out perfectly. So the solution is to build the array from opposite pairs, and if needed, include 0 as a neutral element. Approach If n is even: take n // 2 ...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Eric Xu</div><div class="author-info-description">UNSW Master Graduate sharing insights on algorithms and frontend development</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/ErIcXu-Unity" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://leetcode.com/u/ErIcXu-Unity/" target="_blank" title="LeetCode"><i class="fas fa-code" style="color: #FFA116;"></i></a><a class="social-icon" href="https://www.youtube.com/@mimosashinichi6120" target="_blank" title="YouTube"><i class="fab fa-youtube" style="color: #FF0000;"></i></a><a class="social-icon" href="mailto:chenlong.xu@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-Link"><span class="toc-number">1.</span> <span class="toc-text">Problem Link</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Video-Explanation"><span class="toc-number">2.</span> <span class="toc-text">Video Explanation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Intuition"><span class="toc-number">3.</span> <span class="toc-text">Intuition</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Approach"><span class="toc-number">4.</span> <span class="toc-text">Approach</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Complexity-Analysis"><span class="toc-number">5.</span> <span class="toc-text">Complexity Analysis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-number">6.</span> <span class="toc-text">Solution</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Example-Walkthrough"><span class="toc-number">7.</span> <span class="toc-text">Example Walkthrough</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Key-Takeaways"><span class="toc-number">8.</span> <span class="toc-text">Key Takeaways</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/08/LeetCode-Daily-2025-09-08-1317-Convert-Integer-to-Sum-of-Two-No-Zero-Integers/" title="LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers">LeetCode Daily 08/09/2025 - 1317. Convert Integer to the Sum of Two No-Zero Integers</a><time datetime="2025-09-07T14:00:00.000Z" title="Created 2025-09-08 00:00:00">2025-09-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/07/LeetCode-Daily-2025-09-07-1304-Find-N-Unique-Integers-Sum-to-Zero/" title="LeetCode Daily 07/09/2025 - 1304. Find N Unique Integers Sum up to Zero">LeetCode Daily 07/09/2025 - 1304. Find N Unique Integers Sum up to Zero</a><time datetime="2025-09-06T14:00:00.000Z" title="Created 2025-09-07 00:00:00">2025-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/05/hello-world/" title="Welcome to Eric's Space">Welcome to Eric's Space</a><time datetime="2025-09-04T14:00:00.000Z" title="Created 2025-09-05 00:00:00">2025-09-05</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Eric Xu</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
