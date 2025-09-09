@@ -71,6 +71,7 @@ I'm always open to interesting discussions about technology, algorithms, or pote
 - **GitHub**: [github.com/ErIcXu-Unity](https://github.com/ErIcXu-Unity)
 - **LeetCode**: [leetcode.com/u/ErIcXu-Unity](https://leetcode.com/u/ErIcXu-Unity/)
 - **YouTube**: [youtube.com/@mimosashinichi6120](https://www.youtube.com/@mimosashinichi6120)
+- **LinkedIn**: [linkedin.com/in/chenlong-xu-15a300306](https://www.linkedin.com/in/chenlong-xu-15a300306/)
 - **Email**: chenlong.xu@outlook.com
 
 ---
