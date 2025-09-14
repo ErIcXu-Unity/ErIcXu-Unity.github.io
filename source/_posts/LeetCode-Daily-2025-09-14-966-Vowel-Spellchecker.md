@@ -10,7 +10,7 @@ categories: [Algorithm, Daily LeetCode]
 [LeetCode 966 - Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)
 
 **Difficulty**: Medium  
-**Topic**: String  
+**Topic**: String, Hash Table  
 **Daily Question**: 14th September 2025
 
 ---
