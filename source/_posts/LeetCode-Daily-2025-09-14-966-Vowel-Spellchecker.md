@@ -1,7 +1,7 @@
 ---
 title: "LeetCode Daily 14/09/2025 - 966. Vowel Spellchecker"
 date: 2025-09-14
-tags: [Daily Question, LeetCode, String, Medium, Algorithm]
+tags: [Daily Question, LeetCode, String, Medium, Algorithm, Hash Table]
 categories: [Algorithm, Daily LeetCode]
 ---
 
