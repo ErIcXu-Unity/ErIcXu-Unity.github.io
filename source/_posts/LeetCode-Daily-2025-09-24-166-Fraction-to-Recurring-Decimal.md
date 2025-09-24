@@ -164,7 +164,7 @@ class Solution:
 
 **Iteration 4**: `rem = 4`
 
-- `4` **already in `seen`** at position `2`! 🎯
+- `4` **already in `seen`** at position `2`!
 - **Cycle detected!** Insert `"("` at position `2`, append `")"`
 - `res = ["0", ".", "(", "0", "1", "2", ")"]`
 
