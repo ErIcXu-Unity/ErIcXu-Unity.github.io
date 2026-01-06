@@ -1059,9 +1059,121 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - |
+      <style>
+        #github-stats {
+          display: none;
+          background: var(--card-bg);
+          border-radius: 12px;
+          padding: 30px;
+          margin-bottom: 20px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+          text-align: center;
+        }
+        #github-stats.visible {
+          display: block;
+        }
+        #github-stats h3 {
+          margin: 0 0 25px 0;
+          color: var(--font-color);
+          font-size: 1.6em;
+          font-weight: 600;
+        }
+        #github-stats .profile-card {
+          width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        #github-stats .profile-card img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+        #github-stats .contribution-chart {
+          margin-top: 25px;
+          padding: 20px;
+          background: var(--card-bg);
+          border-radius: 8px;
+          border: 1px solid var(--hr-border);
+        }
+        #github-stats .contribution-chart img {
+          width: 100%;
+          height: auto;
+        }
+        #github-stats .stats-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 25px;
+          justify-content: center;
+          margin-top: 25px;
+        }
+        #github-stats .stats-row a {
+          flex: 1;
+          min-width: 300px;
+          max-width: 450px;
+        }
+        #github-stats .stats-row img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+        @media screen and (max-width: 768px) {
+          #github-stats {
+            padding: 20px;
+          }
+          #github-stats h3 {
+            font-size: 1.4em;
+          }
+          #github-stats .stats-row {
+            flex-direction: column;
+            align-items: center;
+          }
+          #github-stats .stats-row a {
+            min-width: unset;
+            width: 100%;
+          }
+        }
+      </style>
   bottom:
-    # - <script src="xxxx"></script>
+    - |
+      <div id="github-stats">
+        <h3>📊 Last 365 Days Contributions</h3>
+        <div class="profile-card">
+          <a href="https://github.com/ErIcXu-Unity" target="_blank">
+            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ErIcXu-Unity&theme=tokyonight" alt="GitHub Profile Details" />
+          </a>
+        </div>
+        <div class="contribution-chart">
+          <a href="https://github.com/ErIcXu-Unity" target="_blank">
+            <img src="https://ghchart.rshah.org/409ba5/ErIcXu-Unity" alt="GitHub Contribution Chart" />
+          </a>
+        </div>
+        <div class="stats-row">
+          <a href="https://github.com/ErIcXu-Unity" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api?username=ErIcXu-Unity&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&include_all_commits=true" alt="GitHub Stats" />
+          </a>
+          <a href="https://github.com/ErIcXu-Unity" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ErIcXu-Unity&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&langs_count=8" alt="Top Languages" />
+          </a>
+        </div>
+      </div>
+    - |
+      <script>
+        window.addEventListener('load', function() {
+          var card = document.getElementById('github-stats');
+          var recentPosts = document.getElementById('recent-posts');
+          var body = document.body;
+          var isOtherPage = body.classList.contains('post') || 
+                            body.classList.contains('page') || 
+                            body.classList.contains('archive') ||
+                            body.classList.contains('tag') || 
+                            body.classList.contains('category');
+          if (card && recentPosts && !isOtherPage) {
+            recentPosts.insertBefore(card, recentPosts.firstChild);
+            card.classList.add('visible');
+          }
+        });
+      </script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
