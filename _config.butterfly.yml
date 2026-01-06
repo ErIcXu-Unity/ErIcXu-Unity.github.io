@@ -175,12 +175,12 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - "Full-Stack Developer @ CitiXP 🚀"
+    - "React | Next.js | React Native 💻"
+    - "Building Travel Tech in Sydney 🌏"
     - "Master of IT Student 🎓"
-    - "Full-Stack Developer 💻"
-    - "React & Flask Enthusiast 🚀"
-    - "Testing Advocate (300+ Tests) 🧪"
-    - "Real-World Product Builder 🏗️"
-    - "Bilingual Developer (EN/中文) 🌏"
+    - "1 Year Full-Stack Experience 🏗️"
+    - "Seeking Sydney Dev Opportunities 💼"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -308,7 +308,7 @@ aside:
       link: https://github.com/ErIcXu-Unity
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 🚀 Check out my latest project <a href="https://app.citixp.com" target="_blank"><b>CitiXP</b></a> — A full-stack travel platform built with Next.js, React Native & PostgreSQL!
   card_recent_post:
     enable: true
     # If set 0 will show all

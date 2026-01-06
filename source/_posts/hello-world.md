@@ -1,80 +1,84 @@
 ---
-title: Welcome to Eric's Space
+title: "🚀 Featured Project: CitiXP - Full Stack Travel Platform"
 date: 2025-09-05
-tags: [introduction, about]
+tags:
+  [introduction, about, Featured Project, CitiXP, React, Next.js, React Native]
 categories: [General]
+sticky: 100
+cover: https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80
 ---
 
-## 👨‍💻 Professional Profile
+## 🌏 CitiXP — Travel Planning Reimagined
 
-I'm **Eric Xu**, a passionate **Full-Stack Developer** and **Master of IT student** with hands-on experience in both frontend and backend development. Skilled in building scalable web applications, RESTful APIs, and delivering real-world products to users with a strong focus on testing and reliability.
+I'm thrilled to share my latest full-stack project: **[CitiXP](https://app.citixp.com)** — a comprehensive travel planning platform that I helped build from the ground up as a **Software Engineer**.
 
-## 🎯 Core Expertise
+> **🔗 Live Demo**: [app.citixp.com](https://app.citixp.com)
 
-### **Frontend Development**
+---
 
-- **Core Technologies**: React.js, JavaScript (ES6+), TypeScript, HTML5, CSS3
-- **UI/UX**: Responsive interface design, performance optimisation, user experience enhancement
-- **Build Tools**: Modern build processes, maintainable codebases
-- **Testing**: Cypress for E2E and component testing
+## 💼 My Role: Full Stack Developer
 
-### **Backend Development**
+📍 **Sydney, Australia** | 📅 **June 2025 – December 2025**
 
-- **API Development**: RESTful API design using Python/Flask
-- **Database**: PostgreSQL, SQLAlchemy ORM, database schema design
-- **Infrastructure**: Docker containerisation, deployment with Railway
-- **Testing**: Pytest for unit and integration testing (100+ backend tests)
+As part of the development team, I worked across the entire stack to deliver a production-ready travel platform serving real users.
 
-### **Full-Stack Experience**
+### 🎯 Key Contributions
 
-- **Real-World Projects**: Delivered full-stack products to actual users
-- **Testing Philosophy**: 300+ automated tests ensuring reliability
-- **Trust & Safety**: Content moderation workflows, reviewer tooling systems
-- **Scalability**: Built stable, observable services for large live-streaming user bases
+#### **Frontend Development**
 
-### **Technical Skills**
+- Built responsive web application using **Next.js** and **React**
+- Implemented modern UI/UX patterns for seamless user experience
+- Optimized performance for fast page loads and smooth interactions
+
+#### **Backend & API**
+
+- Developed **RESTful API** with **Prisma ORM** and **PostgreSQL**
+- Handled CRUD operations for user data, travel routes, and community content
+- Designed efficient database schemas for scalability
+
+#### **Mobile Development**
+
+- Created cross-platform mobile app using **React Native (Expo)**
+- Delivered consistent experience across **iOS** and **Android**
+- Successfully configured and built production app packages
+
+#### **Authentication & Security**
+
+- Integrated **Clerk** with **NextAuth.js** for Google OAuth
+- Implemented secure third-party login flows
+- Built robust session management system
+
+---
+
+## 🛠️ Tech Stack
 
 ```javascript
-const ericXu = {
-  languages: ["JavaScript", "TypeScript", "Python", "HTML5", "CSS3"],
-  frontend: ["React", "Responsive Design", "Performance Optimisation"],
-  backend: ["Flask", "RESTful APIs", "SQLAlchemy", "PostgreSQL"],
-  tools: ["Docker", "Git/GitHub", "VS Code", "Railway", "Figma"],
-  testing: ["Cypress", "Pytest", "E2E Testing", "Unit Testing"],
-  spoken: ["Mandarin (Native)", "English (IELTS 7.5, PTE Band 90)"],
+const citixpStack = {
+  frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  mobile: ["React Native", "Expo"],
+  backend: ["Node.js", "Prisma ORM", "PostgreSQL"],
+  auth: ["Clerk", "NextAuth.js", "Google OAuth"],
+  deployment: ["Vercel", "Railway"],
 };
 ```
 
-### **Problem Solving**
+---
 
-- **LeetCode**: 50+ problems solved across various difficulty levels
-- **Algorithm Focus**: Dynamic programming, graph algorithms, system design fundamentals
-- **Code Quality**: Strong emphasis on maintainable, testable code
+## 👨‍💻 About Me
 
-## 🚀 Current Focus
+I'm **Eric Xu**, a **Master of IT student** and passionate full-stack developer with **1 year of hands-on experience**. Strong interest in **AI**, **developer tools**, and **mobile-first platforms**.
 
-- **LeetCode Journey**: Solving algorithmic problems and documenting approaches (50+ problems solved)
-- **Full-Stack Development**: Building reliable, tested applications with real user impact
-- **Testing Excellence**: Advocating for comprehensive testing strategies (300+ automated tests)
-- **Technical Documentation**: Sharing practical insights from real-world development experience
+### 🎯 Currently Seeking
 
-## 🌟 Philosophy
+**Full-Stack Developer opportunities in Sydney** — ready to contribute to fast-paced teams building innovative products!
 
-> _"Reliable software is built on solid testing foundations, and great products are delivered through user-focused development."_
-
-I believe in building software that real people can depend on. With 300+ automated tests backing my projects and experience delivering products to actual users, I focus on quality, reliability, and practical solutions that solve genuine problems.
-
-## 📫 Let's Connect!
-
-I'm always open to interesting discussions about technology, algorithms, or potential collaborations. Feel free to reach out!
+### 📫 Let's Connect
 
 - **GitHub**: [github.com/ErIcXu-Unity](https://github.com/ErIcXu-Unity)
+- **LinkedIn**: [linkedin.com/in/chenlong-xu-15a300306](https://www.linkedin.com/in/chenlong-xu-15a300306/)
 - **LeetCode**: [leetcode.com/u/ErIcXu-Unity](https://leetcode.com/u/ErIcXu-Unity/)
-- **YouTube**: [youtube.com/@mimosashinichi6120](https://www.youtube.com/@mimosashinichi6120)
 - **Email**: chenlong.xu@outlook.com
 
 ---
 
-_"Code is poetry written in logic, and algorithms are the verses that make it beautiful."_
-
-Welcome aboard, and happy coding! 🚀
+_"Building software that connects people to the world, one line of code at a time."_ ✈️
